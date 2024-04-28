@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#1a324c">
+  <meta name="msapplication-navbutton-color" content="#1a324c">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="description"
+    content="Jemima Abu is a self-taught Front End Developer and school-taught Systems Engineer from Lagos, Nigeria.">
+  <link rel="stylesheet" href="static/css/main.css" />
+  <link rel="stylesheet" href="static/css/index.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+  <!-- Google fonts -->
+  <style>
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* cyrillic-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2JL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    /* cyrillic */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa0ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    /* greek-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2ZL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    /* greek */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    /* vietnamese */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa2pL7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+    }
+
+    /* latin-ext */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa25L7W0Q5n-wU.woff2) format('woff2');
+      unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    /* latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/inter/v3/UcC73FwrK3iLTeHuS_fvQtMwCp50KnMa1ZL7W0Q5nw.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3FM96129M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-Y3FM96129M');
+  </script>
+
+  <title>Wenchao Hu: Developer</title>
+</head>
+
+<body>
+  <header>
+    <div class="fixed-header animate-background">
+      <div class="container header-container">
+        <div class="logo-container">
+          <span class="logo animate-logo">Sophomore @ Carnegie Mellon University</span>
+        </div>
+        <div class="header-text">
+          <h1>
+            <p class="animate-text-1">Wenchao Hu</p>
+            <p class="animate-text-2">Information Systems</p>
+          </h1>
+        </div>
+        <h2 class="animate-subtitle">
+          Perseverance is my fuel. I seek tech and business complexities to deliver solutions.
+        </h2>
+        <div class="scroll-button animate-scroll" tabindex="0">
+          <div class="arrow">↓</div> scroll
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="container">
+      <a href="/" class="nav-logo" title="Back to Homepage">
+        Wenchao Hu
+      </a>
+      <div class="nav-links">
+        <a href="about.html" class="link">about</a>
+        <a href="projects.html" class="link">projects</a> 
+        <div class="social-media">
+          <a href="https://www.github.com/wenchaohu1" title="Github">
+            <i class="demo-icon icon-github-circled"></i>
+          </a>  
+          <a href="https://www.linkedin.com/in/wenchao-hu-8a6a801b2/" title="LinkedIn">
+            <i class="demo-icon icon-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      <div class="nav-controls">
+        <button id="menu-display" title="Show Menu" class="hamburger"></button>
+        <button id="theme-display" title="Select a color scheme" class="control">
+          <i class="demo-icon icon-cog"></i>
+        </button>
+      </div>
+      <div class="theme-container">
+        <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+          <div class="theme-label">
+            Light
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+          onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+          <div class="theme-label">
+            Dark
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+          <div class="theme-label">
+            Brown
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+          <div class="theme-label">
+            Green
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Pink
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+        <button class="neon theme-select" id="neon-select" onclick="setTheme('neon')" aria-label="Set pink theme">
+          <div class="theme-label">
+            Neon
+          </div>
+          <div class="theme">
+            <div class="color background"></div>
+            <div class="color shade-100"></div>
+            <div class="color shade-300"></div>
+            <div class="color shade-500"></div>
+            <div class="color text"></div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section id="about">
+      <div class="container inner-container">
+        <div class="intro scroll-in">
+          <h2 class="section-title">Hello, I'm Wenchao.</h2>
+          <div class="section-subtitle">
+            <p>I am a rising junior studing Information Systems and Human Computer 
+              Interactions, with a minor in Business Analytics & Optimization.  
+            </p>
+
+            <p> 
+              I love problem solving, bridging the gap between business and technology, creating 
+              innovative solutions to real world problems. 
+            </p>
+
+            <p>
+              You can usually find me exploring cafes, create artsy things, taking portraits for my friends.
+            </p>
+
+          </div>
+          <div class="section-link">
+            <a href="about.html" class="link-btn">More About Me</a> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="wave-border top">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: var(--shade-100)"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color);fill: none;"></path>
+      </svg>
+    </div>
+    <section id="projects">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Featured Projects <span class="title-icon">&#128187;</span></h2>
+          <p class="section-subtitle">
+            I do most of my work under contract but I tend to freelance from time to time or build projects for fun.
+            Here are some of my most recent commercial projects:
+          </p>
+        </div>
+        <div class="project-container">
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/trainella.png" width="720" height="340" alt="Trainella yoga website">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="https://trainella.com" target="_blank" rel="noopener"> Trainella </a>
+                </h3>
+                <div class="project-description">
+                  <p>I built this project for a client after attending her yoga class. She wanted a WordPress site with
+                    a more custom layout so I used an existing WordPress theme and tweaked it with about 500 lines of
+                    additional CSS.</p>
+                  <!-- <p>
+                    One Sunday in June, I attended a free yoga class that I saw online. After the class, I got to
+                    talking
+                    with the instructor and, when I mentioned that I was a web developer, she was like "What a
+                    coincidence, I've been meaning to develop a website for my yoga classes."
+                  </p>
+                  <p>
+                    Never one to look Serendipity in the mouth, I was like "Yeah sure I can do that". The catch was: she
+                    wanted a WordPress site and I'd never actually built a WordPress site from scratch before.
+                  </p>
+                  <p>
+                    After a lot of research and bumbling and mistaking wordpress.com for wordpress.org, I finally
+                    managed
+                    to set up the site with a WordPress theme that I tweaked with about 500 lines of additional CSS to
+                    create a webpage we were both happy with.
+                  </p> -->
+                </div>
+                <ul class="project-tags" title="Technologies used">
+                  <li class="tag">Wordpress</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">HTML</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://trainella.com" target="_blank" rel="noopener" class="link-btn">visit site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/cybercamp.png" width="720" height="340"
+                alt="UNILAG Consult Cybercamp Website">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  <a href="http://unilagconsult.com.ng/cybercamp" target="_blank" rel="noopener">
+                    Unilag Consult Cyber Camp
+                  </a>
+                </h3>
+                <div class="project-description">
+                  <p>
+                    I was contracted to build the website for the University of Lagos Consult Cyber Camp.
+                    It was a 10-page project that I worked on with a team of one other person and it took us a rather
+                    hectic two days to design and launch.
+                  </p>
+                  <!-- <p>
+                    The inspiration behind the design was something along the lines of: provide as much information as
+                    possible and be easy to navigate so we stuck to a basic layout with minimal animations.
+                  </p> -->
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <div class="project-links">
+                  <a href="http://unilagconsult.com.ng/cybercamp" target="_blank" rel="noopener"
+                    class="link-btn">Visit Site</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project scroll-in">
+            <div class="project-image">
+              <img src="./static/images/projects/portfolio.png" width="720" height="340"
+                alt="Jemima Abu: Self Taught Developer, School Taught Engineer">
+            </div>
+            <div class="project-content-container">
+              <div class="project-content">
+                <h3 class="project-title">
+                  My Portfolio
+                </h3>
+                <div class="project-description">
+                  <p>
+                    This is the fourth version of my portfolio website. With this version, I wanted to keep the code as
+                    basic as possible but still make the site interactive so all the animations and transitions on the
+                    page
+                    are done with vanilla JavaScript and CSS.
+                  </p>
+                </div>
+                <ul class="project-tags">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <div class="project-links">
+                  <a href="https://github.com/jemimaabu/portfolio" target="_blank" rel="noopener" class="link-btn">View
+                    Source Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-link scroll-in">
+          <a href="projects" class="link-btn">View All Projects</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-border bottom">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: var(--shade-100);"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color); fill: none;"></path>
+      </svg>
+    </div>
+    <!-- <section id="talks">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Featured Talks <span class="title-icon">&#127908;</span></h2>
+          <p class="section-subtitle">
+            I like to speak at tech conferences on a variety of topics ranging from web accessibility to career
+            development. Here are videos from my past talks:
+          </p>
+        </div>
+        <div class="talks-container">
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="https://www.youtube.com/watch?v=lFzWAsA76DU"
+                title="Accessible.JS - Jemima Abu - CityJS Conf 2020" target="_blank" rel="noopener">
+                <img src="./static/images/talks/accessible-js.jpeg" alt="Accessible.JS - Jemima Abu - CityJS Conf 2020"
+                  width="480" height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Accessible.JS
+              </h3>
+              <div class="card-description">
+                <p>
+                  CityJS Conf 2020
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="https://www.youtube.com/watch?v=QSXdTuD9Rak"
+                title="Understanding Accessibility as a Concept | Jemima Abu | CascadiaJS 2020" target="_blank"
+                rel="noopener">
+                <img src="./static/images/talks/understanding-accessibility.jpeg"
+                  alt="Understanding Accessibility as a Concept | Jemima Abu | CascadiaJS 2020" width="480"
+                  height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Understanding Accessibility as a Concept
+              </h3>
+              <div class="card-description">
+                <p>
+                  CascadiaJS 2020
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="https://www.youtube.com/watch?v=a0CmIEH44vg"
+                title="Jemima Abu - State Management for React Applications at React Live Conference Online"
+                target="_blank" rel="noopener">
+                <img src="./static/images/talks/state-management.jpeg"
+                  alt="Jemima Abu - State Management for React Applications at React Live Conference Online" width="480"
+                  height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                State Management for React Applications
+              </h3>
+              <div class="card-description">
+                <p>
+                  React Live Conference Online
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="https://www.youtube.com/watch?v=TEvxRKd2suc"
+                title="Redux Middleware for React Applications by Jemima Abu from  Telesoftas  at 84th Devclub.lv"
+                target="_blank" rel="noopener">
+                <img src="./static/images/talks/redux-middleware.jpeg"
+                  alt="Redux Middleware for React Applications by Jemima Abu from  Telesoftas  at 84th Devclub.lv"
+                  width="480" height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Redux Middleware for React Applications
+              </h3>
+              <div class="card-description">
+                <p>
+                  84th Devclub.lv
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="https://www.youtube.com/watch?v=YGPxUK5Ksuw"
+                title="Defining A Career Path in Technology - Jemima Abu - Women Tech Network" target="_blank"
+                rel="noopener">
+                <img src="./static/images/talks/tech-career.jpeg"
+                  alt="Defining A Career Path in Technology - Jemima Abu - Women Tech Network" width="480" height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                Defining A Career Path in Technology
+              </h3>
+              <div class="card-description">
+                <p>
+                  Women Tech Network
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card scroll-in">
+            <div class="card-image">
+              <a href="https://www.youtube.com/watch?v=11NNrrbKKgU"
+                title="React Components and How To Style Them - Jemima Abu - React Summit 2020" target="_blank"
+                rel="noopener">
+                <img src="./static/images/talks/react-style.jpeg"
+                  alt="React Components and How To Style Them - Jemima Abu - React Summit 2020" width="480"
+                  height="360">
+              </a>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">
+                React Components and How To Style Them
+              </h3>
+              <div class="card-description">
+                <p>
+                  React Summit 2020
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-link scroll-in">
+          <a href="talks" class="link-btn">View All Talks</a>
+        </div>
+      </div>
+    </section>
+    <div class="wave-border top">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: var(--shade-100)"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color);fill: none;"></path>
+      </svg>
+    </div>
+    <section id="articles">
+      <div class="container">
+        <div class="title-container scroll-in">
+          <h2 class="section-title">Featured Articles <span class="title-icon">&#128466;</span></h2>
+          <p class="section-subtitle">
+            I write the type of articles I would want to read when trying to understand a new concept or develop a
+            skill. Here are some things I've written recently:
+          </p>
+        </div>
+        <div class="articles-container">
+          <div class="article scroll-in">
+            <div class="article-image">
+              <a href="https://dev.to/jemimaabu/how-to-learn-javascript-4g9a"
+                target="_blank" rel="noopener">
+                <img src="./static/images/articles/learn-javascript.png"
+                  alt="How To Learn JavaScript">
+              </a>
+            </div>
+            <div class="article-content">
+              <div class="article-site">
+                <a href="https://dev.to/jemimaabu/how-to-learn-javascript-4g9a"
+                  target="_blank" rel="noopener">DEV.TO</a>
+              </div>
+              <h3 class="article-title">
+                <a href="https://dev.to/jemimaabu/how-to-learn-javascript-4g9a"
+                  target="_blank" rel="noopener">
+                  How To Learn JavaScript
+                </a>
+              </h3>
+              <div class="article-description">
+                <p>
+                  In this article, we'll discover what JavaScript is, what it's used for,
+                  and recommend some courses to help you start your JS learning journey.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="article scroll-in">
+            <div class="article-image">
+              <a href="https://www.freecodecamp.org/news/beginners-guide-to-creating-a-portfolio-website/"
+                target="_blank" rel="noopener">
+                <img src="./static/images/articles/portfolio-guide.png"
+                  alt="A Beginner's Guide To Creating A Portfolio Website">
+              </a>
+            </div>
+            <div class="article-content">
+              <div class="article-site">
+                <a href="https://www.freecodecamp.org/news/beginners-guide-to-creating-a-portfolio-website/"
+                  target="_blank" rel="noopener">freecodecamp</a>
+              </div>
+              <h3 class="article-title">
+                <a href="https://www.freecodecamp.org/news/beginners-guide-to-creating-a-portfolio-website/"
+                  target="_blank" rel="noopener">
+                  I Helped 6 Developers Set Up Their Portfolio Website. Here's What I Learned.
+                </a>
+              </h3>
+              <div class="article-description">
+                <p>
+                  In this article, we'll cover everything you need to know about setting up your portfolio site - from
+                  choosing a domain name to deploying the site online.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="article scroll-in">
+            <div class="article-image">
+              <a href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
+                target="_blank" rel="noopener">
+                <img src="./static/images/articles/js-scroll.png"
+                  alt="Handling Scroll Based Animation With Vanilla JavaScript">
+              </a>
+            </div>
+            <div class="article-content">
+              <div class="article-site">
+                <a href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
+                  target="_blank" rel="noopener">envatotuts+</a>
+              </div>
+              <h3 class="article-title">
+                <a href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
+                  target="_blank" rel="noopener">
+                  Handling Scroll Based Animation With Vanilla JavaScript
+                </a>
+              </h3>
+              <div class="article-description">
+                <p>
+                  In this article, we'll explore how to implement a scroll-based styling on a page using native methods
+                  in vanilla JavaScript and CSS and how to optimize these methods for accessibility and performance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-link scroll-in">
+          <a href="articles" class="link-btn">View All Articles</a>
+        </div>
+      </div>
+    </section> 
+    <div class="wave-border bottom">
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: var(--shade-100);"></path>
+        <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color); fill: none;"></path>
+      </svg>
+    </div>-->
+  </main>
+  <footer class="index-footer"> 
+    <div class="container">
+      <div class="social-media">
+        <a href="https://www.github.com/wenchaohu1" title="Github">
+          <i class="demo-icon icon-github-circled"></i>
+        </a> 
+        <a href="https://www.linkedin.com/in/wenchao-hu-8a6a801b2/" title="LinkedIn">
+          <i class="demo-icon icon-linkedin"></i>
+        </a>
+      </div>
+      <div class="copyright">
+        &copy; Wenchao Hu. Inspired by <a href="https://www.jemimaabu.com">Jemima Abu</a> <span
+          class="heart">&hearts;</span>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<script src="./static/js/index.js"></script>
+<script src="./static/js/landing-page.js"></script>
+
+</html>
