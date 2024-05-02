@@ -268,11 +268,7 @@ footer .social-media a {
 footer .copyright {
   font-size: 0.9rem;
   color: var(--shade-500);
-}
-
-.copyright .heart {
-  color: var(--shade-300);
-}
+} 
 
 @media screen and (min-width: 721px) {
   .hamburger,
